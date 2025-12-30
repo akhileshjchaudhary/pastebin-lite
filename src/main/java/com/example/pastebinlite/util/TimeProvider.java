@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TimeProvider {
 
-    @Value("${TEST_MODE:0}")
+    @Value("${TEST_MODE:1}")
     private String testMode;
 
     public long now(HttpServletRequest request) {
